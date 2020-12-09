@@ -1,6 +1,6 @@
 # jd_sharecode
 
-在`jd_shareCode.json`中填写你拥有的账号信息，包含cookie的写在`own`中，只有`sharecode`的写在`frd`中，注意格式正确，建议复制粘贴后修改。
+在`jd_shareCode.json`中填写你拥有的账号信息，包含`cookie`的写在`own`中，只有`sharecode`的写在`frd`中，注意格式正确，建议复制粘贴后修改。
 
 把 `jd_shareCode.py`和`jd_shareCode.json`文件放在同一目录下，运行
 ```sh
