@@ -1,0 +1,60 @@
+{
+  "own": [
+    {
+      "name": "1",
+      "pt_key": "",
+      "pt_pin": "",
+      "bean": "",
+      "fruit": "",
+      "pet": "",
+      "ddfactory": "",
+      "drfactory": ""
+    },
+    {
+      "name": "2",
+      "pt_key": "",
+      "pt_pin": "",
+      "bean": "",
+      "fruit": "",
+      "pet": "",
+      "ddfactory": "",
+      "drfactory": ""
+    },
+    {
+      "name": "3",
+      "pt_key": "",
+      "pt_pin": "",
+      "bean": "",
+      "fruit": "",
+      "pet": "",
+      "ddfactory": "",
+      "drfactory": ""
+    }
+  ],
+  "frd": [
+  	{
+      "name": "1",
+      "bean": "",
+      "fruit": "",
+      "pet": "",
+      "ddfactory": "",
+      "drfactory": ""
+    },
+    {
+      "name": "2",
+      "bean": "",
+      "fruit": "",
+      "pet": "",
+      "ddfactory": "",
+      "drfactory": ""
+    },
+    {
+      "name": "3",
+      "bean": "",
+      "fruit": "",
+      "pet": "",
+      "ddfactory": "",
+      "drfactory": ""
+    }
+  ]
+}
