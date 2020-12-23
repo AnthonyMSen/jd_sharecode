@@ -4,57 +4,63 @@
       "name": "1",
       "pt_key": "",
       "pt_pin": "",
-      "bean": "",
-      "fruit": "",
-      "pet": "",
-      "ddfactory": "",
-      "drfactory": ""
+      "beans": "",
+      "fruits": "",
+      "pets": "",
+      "dd_factory": "",
+      "jx_factory": "",
+      "makemoney": ""
     },
     {
       "name": "2",
       "pt_key": "",
       "pt_pin": "",
-      "bean": "",
-      "fruit": "",
-      "pet": "",
-      "ddfactory": "",
-      "drfactory": ""
+      "beans": "",
+      "fruits": "",
+      "pets": "",
+      "dd_factory": "",
+      "jx_factory": "",
+      "makemoney": ""
     },
     {
       "name": "3",
       "pt_key": "",
       "pt_pin": "",
-      "bean": "",
-      "fruit": "",
-      "pet": "",
-      "ddfactory": "",
-      "drfactory": ""
+      "beans": "",
+      "fruits": "",
+      "pets": "",
+      "dd_factory": "",
+      "jx_factory": "",
+      "makemoney": ""
     }
   ],
   "frd": [
   	{
       "name": "1",
-      "bean": "",
-      "fruit": "",
-      "pet": "",
-      "ddfactory": "",
-      "drfactory": ""
+      "beans": "",
+      "fruits": "",
+      "pets": "",
+      "dd_factory": "",
+      "jx_factory": "",
+      "makemoney": ""
     },
     {
       "name": "2",
-      "bean": "",
-      "fruit": "",
-      "pet": "",
-      "ddfactory": "",
-      "drfactory": ""
+      "beans": "",
+      "fruits": "",
+      "pets": "",
+      "dd_factory": "",
+      "jx_factory": "",
+      "makemoney": ""
     },
     {
       "name": "3",
-      "bean": "",
-      "fruit": "",
-      "pet": "",
-      "ddfactory": "",
-      "drfactory": ""
+      "beans": "",
+      "fruits": "",
+      "pets": "",
+      "dd_factory": "",
+      "jx_factory": "",
+      "makemoney": ""
     }
   ]
 }
