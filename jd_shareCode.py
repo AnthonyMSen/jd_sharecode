@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+import re
 import json
 
 JD_COOKIE = '- JD_COOKIE='
@@ -42,8 +42,11 @@ def get_finalcode(parameter):
         if j >= 1:
             final_code = final_code + '&'
         final_code = final_code + all_code.replace(own[j][parameter], '')
-    final_code = final_code.replace('@@', '@')
-    final_code = final_code.lstrip('@')
+    
+    final_code = re.sub(r'@+', "@", final_code)
+    final_code = re.sub(r'&+', "&", final_code)
+    final_code = final_code.replace('@&', '&')
+    final_code = final_code.strip('@')
     return final_code
 
 
