@@ -1,4 +1,5 @@
 #!/usr/bin/python
+
 import json
 
 JD_COOKIE = '- JD_COOKIE='
@@ -7,6 +8,7 @@ FRUITSHARECODES = '- FRUITSHARECODES='
 PETSHARECODES = '- PETSHARECODES='
 DDFACTORY_SHARECODES = '- DDFACTORY_SHARECODES='
 DREAM_FACTORY_SHARE_CODES = '- DREAM_FACTORY_SHARE_CODES='
+JDZZ_SHARECODES = '- JDZZ_SHARECODES='
 
 
 with open("jd_shareCode.json", 'r') as load_f:
@@ -45,12 +47,12 @@ def get_finalcode(parameter):
     return final_code
 
 
-PLANT_BEAN_SHARECODES = PLANT_BEAN_SHARECODES + get_finalcode('bean')
-FRUITSHARECODES = FRUITSHARECODES + get_finalcode('fruit')
-PETSHARECODES = PETSHARECODES + get_finalcode('pet')
-DDFACTORY_SHARECODES = DDFACTORY_SHARECODES + get_finalcode('ddfactory')
-DREAM_FACTORY_SHARE_CODES = DREAM_FACTORY_SHARE_CODES + get_finalcode('drfactory')
-
+PLANT_BEAN_SHARECODES = PLANT_BEAN_SHARECODES + get_finalcode('beans')
+FRUITSHARECODES = FRUITSHARECODES + get_finalcode('fruits')
+PETSHARECODES = PETSHARECODES + get_finalcode('pets')
+DDFACTORY_SHARECODES = DDFACTORY_SHARECODES + get_finalcode('dd_factory')
+DREAM_FACTORY_SHARE_CODES = DREAM_FACTORY_SHARE_CODES + get_finalcode('jx_factory')
+JDZZ_SHARECODES = JDZZ_SHARECODES + get_finalcode('makemoney')
 # finish and print
 print(JD_COOKIE)
 print(PLANT_BEAN_SHARECODES)
@@ -58,3 +60,4 @@ print(FRUITSHARECODES)
 print(PETSHARECODES)
 print(DDFACTORY_SHARECODES)
 print(DREAM_FACTORY_SHARE_CODES)
+print(JDZZ_SHARECODES)
