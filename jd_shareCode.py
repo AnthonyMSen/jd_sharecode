@@ -12,42 +12,45 @@ JDZZ_SHARECODES = '- JDZZ_SHARECODES='
 
 
 with open("jd_shareCode.json", 'r') as load_f:
-    load_dict = json.load(load_f)
+	load_dict = json.load(load_f)
 
 own = load_dict['own']
 frd = load_dict['frd']
 
 # get JD_COOKIE
 for i in range(len(own)):
-    if i >= 1:
-        JD_COOKIE = JD_COOKIE + '&'
-    pt_key = 'pt_key=' + own[i]['pt_key'] + ';'
-    pt_pin = 'pt_pin=' + own[i]['pt_pin'] + ';'
-    JD_COOKIE = JD_COOKIE + pt_key + pt_pin
+	if i >= 1:
+		JD_COOKIE = JD_COOKIE + '&'
+	pt_key = 'pt_key=' + own[i]['pt_key'] + ';'
+	pt_pin = 'pt_pin=' + own[i]['pt_pin'] + ';'
+	JD_COOKIE = JD_COOKIE + pt_key + pt_pin
+
+def sort(parameter):
+	parameter = re.sub(r'@+', "@", parameter)
+	parameter = re.sub(r'&+', "&", parameter)
+	parameter = parameter.replace('@&', '&')
+	parameter = parameter.strip('@')
+
+	return parameter
 
 
 def get_finalcode(parameter):
-    # get full code
-    all_code = ''
-    final_code = ''
-    for j in range(len(own)):
-        if j >= 1:
-            all_code = all_code + '@'
-        all_code = all_code + own[j][parameter]
+	# get full code
+	all_code = ''
+	final_code = ''
+	for j in range(len(own)):
+		if j >= 1:
+			all_code = all_code + '@'
+		all_code = all_code + own[j][parameter]
 
-    for j in range(len(frd)):
-        all_code = all_code + '@' + frd[j][parameter]
-    # combine all code
-    for j in range(len(own)):
-        if j >= 1:
-            final_code = final_code + '&'
-        final_code = final_code + all_code.replace(own[j][parameter], '')
-    
-    final_code = re.sub(r'@+', "@", final_code)
-    final_code = re.sub(r'&+', "&", final_code)
-    final_code = final_code.replace('@&', '&')
-    final_code = final_code.strip('@')
-    return final_code
+	for j in range(len(frd)):
+		all_code = all_code + '@' + frd[j][parameter]
+	# combine all code
+	for j in range(len(own)):
+		if j >= 1:
+			final_code = final_code + '&'
+		final_code = final_code + all_code.replace(own[j][parameter], '')
+	return sort(final_code)
 
 
 PLANT_BEAN_SHARECODES = PLANT_BEAN_SHARECODES + get_finalcode('beans')
