@@ -9,6 +9,7 @@ PETSHARECODES = '- PETSHARECODES='
 DDFACTORY_SHARECODES = '- DDFACTORY_SHARECODES='
 DREAM_FACTORY_SHARE_CODES = '- DREAM_FACTORY_SHARE_CODES='
 JDZZ_SHARECODES = '- JDZZ_SHARECODES='
+JDJOY_SHARECODES = '- JDJOY_SHARECODES='
 
 with open("jd_shareCode.json", 'r') as load_f:
     load_dict = json.load(load_f)
@@ -50,6 +51,7 @@ def get_finalcode(parameter):
         if j >= 1:
             final_code = final_code + '&'
         final_code = final_code + all_code.replace(own[j][parameter], '')
+
     return sort(final_code)
 
 
@@ -59,6 +61,7 @@ PETSHARECODES = PETSHARECODES + get_finalcode('pets')
 DDFACTORY_SHARECODES = DDFACTORY_SHARECODES + get_finalcode('dd_factory')
 DREAM_FACTORY_SHARE_CODES = DREAM_FACTORY_SHARE_CODES + get_finalcode('jx_factory')
 JDZZ_SHARECODES = JDZZ_SHARECODES + get_finalcode('makemoney')
+JDJOY_SHARECODES = JDJOY_SHARECODES + get_finalcode('crazyjoy')
 
 # finish and print
 print(JD_COOKIE)
@@ -68,3 +71,4 @@ print(PETSHARECODES)
 print(DDFACTORY_SHARECODES)
 print(DREAM_FACTORY_SHARE_CODES)
 print(JDZZ_SHARECODES)
+print(JDJOY_SHARECODES)
